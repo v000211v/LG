@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1260px;
+  width: 92%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 헤더 */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  color: #333;
+  height: 80px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+}
+
+nav {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gnb {
+  display: flex;
+  text-align: center;
+  position: relative;
+}
+
+.gnb > li {
+  position: relative;
+}
+
+.gnb > li :hover {
+  color: #ca325d;
+}
+
+.gnb > li > a {
+  display: block;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 50px;
+  color: #111;
+}
+
+.gnb > li > a.on {
+  color: #ca325d;
+}
+
+.gnb ul {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background: red; */
+  padding: 20px 30px;
+}
+
+.gnb ul li a {
+  display: block;
+  white-space: nowrap;
+  padding: 12px 0;
+  color: #898989;
+}
+
+.gnb ul li a:hover {
+  color: #ca325d;
+}
+
+/* 섹션 */
+section .container {
+  margin-top: 130px;
+  align-items: center;
+}
+
+.breadcrumb {
+  margin-bottom: 24px;
+  padding-left: 50px;
+}
+
+.breadcrumb a {
+  font-size: 18px;
+  color: #999999;
+}
+
+.breadcrumb .on {
+  color: #ca325d;
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.main_text h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  padding-left: 50px;
+}
+
+.main_text span {
+  display: block;
+  max-width: 1260px;
+  width: 92%;
+  height: 2px;
+  background: #222;
+}
+
+.sign_in {
+  padding: 100px 0;
+}
+
+.email,
+.password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.email input,
+.password input {
+  width: 400px;
+  height: 50px;
+  outline: none;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.email input::placeholder,
+.password input::placeholder {
+  font-size: 20px;
+}
+
+/* 풋터 */
+.footer {
+  height: 104px;
+  background: #333;
+  margin-top: 125px;
+}
+
+.footer ul {
+  display: flex;
+  padding-top: 24px;
+  margin-bottom: 15px;
+}
+
+.footer ul li a {
+  color: #a6a6a6;
+}
+
+.footer li {
+  margin-right: 20px;
+}
+
+.footer li a {
+  transition: all 0.3s;
+}
+
+.footer li a:hover {
+  color: #fff;
+}
+
+.copyright {
+  color: #a6a6a6;
+}

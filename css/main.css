@@ -511,11 +511,5 @@ nav {
   color: #a6a6a6;
 }
 
-/* 로그인 */
-
-.breadcrumb .on {
-  color: #c00c3f;
-}
-
 @media (max-width) {
 }
